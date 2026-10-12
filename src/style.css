@@ -14,14 +14,13 @@
 
 @font-face {
   font-family: AvenirBook;
-  src: url("./fonts/Avenir-Book.ttf");
+  src: url('./fonts/Avenir-Book.ttf');
 }
 
 @font-face {
   font-family: AvenirHeavy;
-  src: url("./fonts/Avenir-Heavy.ttf");
+  src: url('./fonts/Avenir-Heavy.ttf');
 }
-
 
 * {
   box-sizing: border-box;
