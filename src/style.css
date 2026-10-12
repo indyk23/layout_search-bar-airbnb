@@ -140,3 +140,9 @@ main {
     padding: 0 13px;
   }
 }
+
+.search--big img,
+.search--small img {
+  position: relative;
+  top: 2px;
+}
