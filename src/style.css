@@ -48,7 +48,9 @@ main {
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  transition: box-shadow 0.2s, border-color 0.2s;
+  transition:
+    box-shadow 0.2s,
+    border-color 0.2s;
 }
 
 /* Duży pasek */
