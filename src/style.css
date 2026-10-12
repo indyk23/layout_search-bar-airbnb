@@ -22,8 +22,13 @@ body {
   font-weight: 300;
 }
 
-main {
+/* main {
   width: 100%;
+} */
+main {
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .search {
@@ -57,7 +62,7 @@ main {
   flex-shrink: 0;
 }
 
-.search input {
+/* .search input {
   width: 100%;
   min-width: 0;
   margin-left: 12px;
@@ -68,10 +73,26 @@ main {
   font: inherit;
   font-weight: 300;
   color: #3d4b66;
+} */
+.search input {
+  width: 100%;
+  min-width: 0;
+  margin-left: 12px;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  font-weight: 300;
+  color: #222;
 }
 
-.search input::placeholder {
+/* .search input::placeholder {
   color: #a0a5b1;
+  opacity: 1;
+} */
+.search input::placeholder {
+  color: #555;
   opacity: 1;
 }
 
