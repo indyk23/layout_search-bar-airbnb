@@ -37,54 +37,40 @@ main {
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   background-color: #fff;
-  transition:
-    border-color 0.2s,
-    box-shadow 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-/* Duży pasek */
 .search--big {
   margin-top: 20px;
   min-height: 70px;
-  padding: 0;
+  padding: 0 25px;
 }
 
-/* Mały pasek */
 .search--small {
   margin-top: 20px;
   min-height: 42px;
-  padding: 0;
+  padding: 0 13px;
 }
 
-/* Wspólne ustawienia ikon */
 .search img {
-  position: absolute;
   display: block;
   flex-shrink: 0;
 }
 
-/* Ikona dużego paska: 25 px od lewej i góry */
 .search--big img {
   width: 19px;
   height: 19px;
-  left: 25px;
-  top: 25px;
 }
 
-/* Ikona małego paska: 13 px od lewej i 15 px od góry */
 .search--small img {
   width: 11px;
   height: 11px;
-  left: 13px;
-  top: 15px;
 }
 
-/* Wspólne ustawienia tekstu */
 .search input {
-  display: block;
-  width: 100%;
+  flex: 1;
+  width: 0;
   min-width: 0;
-  height: 100%;
   padding: 0;
   border: none;
   outline: none;
@@ -94,28 +80,23 @@ main {
   color: #222;
 }
 
-/* Tekst w dużym pasku */
 .search--big input {
   margin-left: 62px;
 }
 
-/* Tekst w małym pasku */
 .search--small input {
   margin-left: 33px;
 }
 
-/* Podpowiedź */
 .search input::placeholder {
   color: #555;
   opacity: 1;
 }
 
-/* Hover */
 .search:hover {
   border-color: #b5bdcc;
 }
 
-/* Focus */
 .search:focus-within {
   border-color: #3d4b66;
   box-shadow: 0 0 0 1px #3d4b66;
