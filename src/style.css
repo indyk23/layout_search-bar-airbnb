@@ -22,9 +22,6 @@ body {
   font-weight: 300;
 }
 
-/* main {
-  width: 100%;
-} */
 main {
   width: auto;
   margin-left: 8px;
@@ -43,41 +40,42 @@ main {
     box-shadow 0.2s;
 }
 
+/* Duży pasek wyszukiwania */
 .search--big {
   margin-top: 20px;
   min-height: 70px;
   padding: 0 20px;
 }
 
+/* Mały pasek wyszukiwania */
 .search--small {
   margin-top: 20px;
   min-height: 42px;
   padding: 0 12px;
 }
 
+/* Wspólne ustawienia ikon */
 .search img {
   display: block;
-  width: 16px;
-  height: 16px;
   flex-shrink: 0;
 }
 
-/* .search input {
-  width: 100%;
-  min-width: 0;
-  margin-left: 12px;
-  padding: 0;
-  border: none;
-  outline: none;
-  background: transparent;
-  font: inherit;
-  font-weight: 300;
-  color: #3d4b66;
-} */
+/* Ikona dużego paska */
+.search--big img {
+  width: 19px;
+  height: 19px;
+}
+
+/* Ikona małego paska */
+.search--small img {
+  width: 11px;
+  height: 11px;
+}
+
+/* Wspólne ustawienia tekstu */
 .search input {
   width: 100%;
   min-width: 0;
-  margin-left: 12px;
   padding: 0;
   border: none;
   outline: none;
@@ -87,19 +85,28 @@ main {
   color: #222;
 }
 
-/* .search input::placeholder {
-  color: #a0a5b1;
-  opacity: 1;
-} */
+/* Tekst w dużym pasku */
+.search--big input {
+  margin-left: 62px;
+}
+
+/* Tekst w małym pasku */
+.search--small input {
+  margin-left: 33px;
+}
+
+/* Tekst podpowiedzi */
 .search input::placeholder {
   color: #555;
   opacity: 1;
 }
 
+/* Stan hover */
 .search:hover {
   border-color: #b5bdcc;
 }
 
+/* Stan focus */
 .search:focus-within {
   border-color: #3d4b66;
   box-shadow: 0 0 0 1px #3d4b66;
