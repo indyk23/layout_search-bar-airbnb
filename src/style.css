@@ -1,13 +1,13 @@
 @font-face {
   font-family: Avenir;
-  src: url("fonts/Avenir-Book.ttf") format("truetype");
+  src: url('fonts/Avenir-Book.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: Avenir;
-  src: url("fonts/Avenir-Heavy.ttf") format("truetype");
+  src: url('fonts/Avenir-Heavy.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
@@ -36,7 +36,9 @@ main {
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   background-color: #fff;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
 /* Duży pasek */
@@ -74,6 +76,7 @@ main {
   flex: 1;
   width: 100%;
   min-width: 0;
+  margin: 0;
   padding: 0;
   border: none;
   outline: none;
@@ -83,11 +86,12 @@ main {
   color: #222;
 }
 
-/* Odstęp tekstu od ikony */
+/* Tekst w dużym pasku */
 .search--big input {
   margin-left: 62px;
 }
 
+/* Tekst w małym pasku */
 .search--small input {
   margin-left: 33px;
 }
