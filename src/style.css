@@ -13,12 +13,12 @@
 } */
 
 @font-face {
-  font-family: AvenirBook;
+  font-family: Avenir;
   src: url('./fonts/Avenir-Book.ttf');
 }
 
 @font-face {
-  font-family: AvenirHeavy;
+  font-family: Avenir;
   src: url('./fonts/Avenir-Heavy.ttf');
 }
 
@@ -28,7 +28,7 @@
 
 body {
   margin: 0;
-  font-family: AvenirBook, AvenirHeavy, sans-serif;
+  font-family: Avenir, AvenirHeavy, sans-serif;
   font-weight: 300;
 }
 
