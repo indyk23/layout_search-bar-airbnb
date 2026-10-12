@@ -44,14 +44,14 @@ main {
 .search--big {
   margin-top: 20px;
   min-height: 70px;
-  padding: 0 20px;
+  padding: 0;
 }
 
 /* Mały pasek wyszukiwania */
 .search--small {
   margin-top: 20px;
   min-height: 42px;
-  padding: 0 12px;
+  padding: 0;
 }
 
 /* Wspólne ustawienia ikon */
@@ -64,12 +64,16 @@ main {
 .search--big img {
   width: 19px;
   height: 19px;
+  margin-left: 25px;
+  transform: translateY(5px);
 }
 
 /* Ikona małego paska */
 .search--small img {
   width: 11px;
   height: 11px;
+  margin-left: 13px;
+  transform: translateY(6px);
 }
 
 /* Wspólne ustawienia tekstu */
