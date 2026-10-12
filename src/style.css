@@ -1,13 +1,13 @@
 @font-face {
   font-family: Avenir;
-  src: url('fonts/Avenir-Book.ttf') format('truetype');
+  src: url("fonts/Avenir-Book.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: Avenir;
-  src: url('fonts/Avenir-Heavy.ttf') format('truetype');
+  src: url("fonts/Avenir-Heavy.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
@@ -23,12 +23,11 @@ body {
 }
 
 main {
-  width: auto;
-  margin-left: 8px;
-  margin-right: 8px;
+  width: 100%;
+  padding-inline: 8px;
 }
 
-/* Wspólne ustawienia paska */
+/* Wspólne ustawienia pasków */
 .search {
   position: relative;
   display: flex;
@@ -40,18 +39,21 @@ main {
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+/* Duży pasek */
 .search--big {
   margin-top: 20px;
   min-height: 70px;
-  padding: 0 25px;
+  padding-inline: 25px;
 }
 
+/* Mały pasek */
 .search--small {
   margin-top: 20px;
   min-height: 42px;
-  padding: 0 13px;
+  padding-inline: 13px;
 }
 
+/* Ikony */
 .search img {
   display: block;
   flex-shrink: 0;
@@ -67,9 +69,10 @@ main {
   height: 11px;
 }
 
+/* Pola tekstowe */
 .search input {
   flex: 1;
-  width: 0;
+  width: 100%;
   min-width: 0;
   padding: 0;
   border: none;
@@ -80,6 +83,7 @@ main {
   color: #222;
 }
 
+/* Odstęp tekstu od ikony */
 .search--big input {
   margin-left: 62px;
 }
@@ -88,16 +92,40 @@ main {
   margin-left: 33px;
 }
 
+/* Tekst podpowiedzi */
 .search input::placeholder {
   color: #555;
   opacity: 1;
 }
 
+/* Hover */
 .search:hover {
   border-color: #b5bdcc;
 }
 
+/* Focus */
 .search:focus-within {
   border-color: #3d4b66;
   box-shadow: 0 0 0 1px #3d4b66;
+}
+
+/* Małe ekrany */
+@media (max-width: 480px) {
+  .search--big {
+    min-height: 60px;
+    padding-inline: 16px;
+  }
+
+  .search--small {
+    min-height: 42px;
+    padding-inline: 10px;
+  }
+
+  .search--big input {
+    margin-left: 24px;
+  }
+
+  .search--small input {
+    margin-left: 16px;
+  }
 }
