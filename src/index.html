@@ -7,10 +7,7 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Search bars</title>
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
@@ -18,11 +15,12 @@
         class="search search--big"
         data-qa="big"
       >
-        <img
-          src="images/Search.svg"
-          alt="lupa"
-        />
+        <div
+          class="search__icon search__icon--big"
+          aria-hidden="true"
+        ></div>
         <input
+          class="search__input search__input--big"
           type="text"
           data-qa="keypress"
           placeholder="Try &#34;Los Angeles&#34;"
@@ -34,11 +32,12 @@
         class="search search--small"
         data-qa="small"
       >
-        <img
-          src="images/Search.svg"
-          alt="lupa"
-        />
+        <div
+          class="search__icon search__icon--small"
+          aria-hidden="true"
+        ></div>
         <input
+          class="search__input search__input--small"
           type="text"
           placeholder="Try &#34;Los Angeles&#34;"
           aria-label="Small search"
