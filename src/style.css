@@ -29,6 +29,7 @@ main {
 }
 
 .search {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -40,14 +41,14 @@ main {
     box-shadow 0.2s;
 }
 
-/* Duży pasek wyszukiwania */
+/* Duży pasek */
 .search--big {
   margin-top: 20px;
   min-height: 70px;
   padding: 0;
 }
 
-/* Mały pasek wyszukiwania */
+/* Mały pasek */
 .search--small {
   margin-top: 20px;
   min-height: 42px;
@@ -56,24 +57,25 @@ main {
 
 /* Wspólne ustawienia ikon */
 .search img {
+  position: absolute;
   display: block;
   flex-shrink: 0;
 }
 
-/* Ikona dużego paska */
+/* Ikona dużego paska: 25 px od lewej i góry */
 .search--big img {
   width: 19px;
   height: 19px;
-  margin-left: 25px;
-  transform: translateY(5px);
+  left: 25px;
+  top: 25px;
 }
 
-/* Ikona małego paska */
+/* Ikona małego paska: 13 px od lewej i 15 px od góry */
 .search--small img {
   width: 11px;
   height: 11px;
-  margin-left: 13px;
-  transform: translateY(6px);
+  left: 13px;
+  top: 15px;
 }
 
 /* Wspólne ustawienia tekstu */
@@ -99,18 +101,18 @@ main {
   margin-left: 33px;
 }
 
-/* Tekst podpowiedzi */
+/* Podpowiedź */
 .search input::placeholder {
   color: #555;
   opacity: 1;
 }
 
-/* Stan hover */
+/* Hover */
 .search:hover {
   border-color: #b5bdcc;
 }
 
-/* Stan focus */
+/* Focus */
 .search:focus-within {
   border-color: #3d4b66;
   box-shadow: 0 0 0 1px #3d4b66;
