@@ -88,12 +88,12 @@ main {
 
 /* Tekst w dużym pasku */
 .search--big input {
-  margin-left: 43px;
+  margin-left: 36px;
 }
 
 /* Tekst w małym pasku */
 .search--small input {
-  margin-left: 14px;
+  margin-left: 10px;
 }
 
 /* Tekst podpowiedzi */
