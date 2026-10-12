@@ -47,14 +47,14 @@ main {
 
 /* Duży pasek */
 .search--big {
-  max-width: 1000px;
+  max-width: none;
   height: 70px;
   padding: 0 25px;
 }
 
 /* Mały pasek */
 .search--small {
-  max-width: 527px;
+  max-width: none;
   height: 42px;
   margin-top: 36px;
   padding: 0 13px;
